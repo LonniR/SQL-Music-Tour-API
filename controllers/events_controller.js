@@ -84,7 +84,7 @@ events.put('/:id', async (req, res) => {
     }
 })
 
-// DELETE AN EVENT
+
 events.delete('/:id', async (req, res) => {
     try {
         const deletedEvents = await Event.destroy({
@@ -100,5 +100,5 @@ events.delete('/:id', async (req, res) => {
     }
 })
 
-// EXPORT
+
 module.exports = events
